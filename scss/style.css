@@ -9,6 +9,9 @@
     --grey-bg: #F8F8F8;
     --grey-desc: #5D5D5D;
     --grey-adv: #FBFBFB;
+    --grey-form: #E1E1E1;
+    --grey-nav: #6F6E6E;
+    --pink--pale: #F8F3F4;
 }
 
 body {
@@ -53,19 +56,77 @@ body {
 
 .header__search {
     margin: 0 0 0 41px;
+    align-self: center;
 }
 
 .header__link {
     margin: 0 0 0 33px;
+    text-decoration: none;
+}
+
+.header__logopic {
+    fill: var(--white);
+    cursor: pointer;
+}
+
+.header__logopic:hover,
+.header__logopic:focus {
+    fill: var(--pink-color);
 }
 
 .header__menu-btn {
-    border: 1px solid;
+    border: none;
     background-color: transparent;
 }
 
 .header__nav {
-    display: none;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    background-color: var(--white);
+    padding: 37px 0 0 34px;
+}
+
+.header__nav-btn {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    margin: 0 17px 9px;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.header__nav-title {
+    font-weight: 700;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.nav-sub-item__link-title {
+    display: block;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--dark-pink);
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+.nav-sub-item__link {
+    display: block;
+    font-weight: 400;
+    color: var(--grey-nav);
+    margin: 0 0 11px 20px;
+    text-decoration: none;
+}
+
+.nav-sub-item__link-title:hover,
+.nav-sub-item__link:hover {
+    text-decoration: underline;
 }
 
 .brand {
@@ -86,6 +147,15 @@ body {
     font-weight: 900;
     line-height: 50px;
     text-transform: uppercase;
+}
+
+.brand__title::before {
+    height: 92px;
+    width: 12px;
+    background: var(--dark-pink);
+    content: '';
+    position: absolute;
+    margin-left: -26px;
 }
 
 .brand__subtitle {
@@ -185,6 +255,47 @@ body {
     margin-bottom: 30px;
 }
 
+.product__item-wrp {
+    position: relative;
+}
+
+.product__item-overlay {
+    width: 100%;
+    height: 100%;
+    background: #3A3838;
+    opacity: 86%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.product__item-btn {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    position: absolute;
+    width: 138px;
+    height: 43px;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 0 0 0 30px
+  }
+
+.product__item-btn::before {
+    content: url(../img/basketmini.svg);
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+}
+
+.products__item:hover .product__item-overlay,
+.products__item:hover .product__item-btn {
+    display: block;
+    cursor: pointer;
+ }
+
 .products__item-name {
     font-weight: bold;
     text-transform: uppercase;
@@ -214,6 +325,12 @@ body {
     text-decoration: none;
     align-self: center;
     margin-top: 18px;
+}
+
+.products__btn:hover,
+.products__btn:focus {
+    color: var(--white);
+    background: var(--pink-btn);
 }
 
 .advantages {
@@ -250,17 +367,110 @@ body {
     color: var(--grey-adv);
 }
 
-.footer__top {
+.reginfo {
+    background-color: var(--pink--pale);
+    min-height: 148px;
+}
+
+.reginfo__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--dark-pink);
+    text-transform: uppercase;
+    padding: 60px 0;
+}
+
+.registration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 64px 0 96px;
+}
+
+.registration__form {
+    max-width: 360px;
+}
+
+.registration__form-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.registration__form-input {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    border: 1px solid var(--grey-form);
+    padding: 0 0 0 15px;
+}
+
+.registration__form-sex {
+    margin-bottom: 33px;
+}
+
+.form-sex__label {
+    padding-right: 20px;
+}
+
+.registration__text {
+    color: var(--grey-text);
+    margin-bottom: 40px;
+}
+
+.registration__btn {
+    color: var(--white);
+    background-color: var(--dark-pink);
+    border: none;
+    text-transform: uppercase;
+    padding: 16px 29px;
+    cursor: pointer;
+}
+
+.registration__btn::after {
+    content: url(../img/arrow.svg);
+    margin-left: 20px;
+}
+
+.loyalty {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    max-width: 650px;
+}
+
+.loyalty__title {
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.loyalty__text {
+    margin-bottom: 22px;
+}
+
+.loyalty__list {
+    list-style-image: url(../img/checkmark.svg);
+    margin-left: 30px;
+}
+
+.loyalty__item {
+    margin-bottom: 16px;
+    padding-left: 23px;
+}
+
+.footer__subscription {
     background-image: url(../img/footer_bg.jpg);
     background-repeat: round;
 }
 
-.footer__top-wrp {
+.footer__subscription-wrp {
     display: flex;
     justify-content: space-between;
 }
 
-.footer__top-qoute {
+.footer__subscription-qoute {
     width: 360px;
     height: 225px;
     padding: 97px 0 126px;
@@ -268,18 +478,18 @@ body {
     text-align: center;
 }
 
-.footer__top-text {    
+.footer__subscription-text {    
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     margin-top: 30px;
 }
 
-.footer__top-subscription {
+.footer__subscription-form {
     margin-top: 150px;
 }
 
-.subscription__title {  
+.subscription-form__title {  
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
@@ -288,7 +498,7 @@ body {
     margin-bottom: 32px;
 }
 
-.subscription__subtitle {  
+.subscription-form__subtitle {  
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -296,27 +506,73 @@ body {
     display: block;
 }
 
-.footer__bottom {
+.subscription-form__form {
+    display: flex;
+}
+
+.subscription-form__email {
+    color: var(--grey-desc);
+    background-color: var(--grey-form);
+    border: none;
+    width: 200px;
+    height: 50px;
+    padding: 0 22px;
+    border-radius: 40px 0 0 40px;
+}
+
+.subscription-form__btn {
+    color: var(--white);
+    background-color: var(--dark-pink);
+    border: none;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 0 40px 40px 0;
+}
+
+.footer__ref {
     background-color: var(--black);
     padding: 24px;
 }
 
-.footer__bottom-wrp {
+.footer__ref-wrp {
     display: flex;
     justify-content: space-between;
 }
 
-.footer__bottom-copyright {
+.footer__ref-copyright {
     font-weight: 400;
     color: var(--grey-adv);
     align-self: center;
 }
 
-.footer__bottom-list {
+.footer__ref-list {
     list-style-type: none;
     display: flex;
 }
 
-.footer__bottom_sm {
+.footer__ref-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 7px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--white);
+}
+
+.footer__ref-link:hover,
+.footer__ref-link:focus {
+    background-color: var(--pink-color);
+    fill: var(--white);
+}
+
+.footer__ref-sm {
+    fill: var(--black);
+    height: 50%;
+}
+
+.footer__ref-sm:hover,
+.footer__ref-sm:focus {
+    fill: var(--white);
 }
