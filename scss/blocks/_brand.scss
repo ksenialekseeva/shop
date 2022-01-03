@@ -1,0 +1,39 @@
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+}
+
+.brand__title-wrp {
+    flex-grow: 1;
+    background-color: $pink-bgc;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+}
+
+.brand__title {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.brand__title::before {
+    height: 92px;
+    width: 12px;
+    background: $dark-pink;
+    content: '';
+    position: absolute;
+    margin-left: -26px;
+}
+
+.brand__subtitle {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    display: block;
+}
+
+.brand__subtitle-pink {
+    color: $pink-color;
+}

@@ -1,0 +1,25 @@
+.loyalty {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    max-width: 650px;
+}
+
+.loyalty__title {
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.loyalty__text {
+    margin-bottom: 22px;
+}
+
+.loyalty__list {
+    list-style-image: url(../img/checkmark.svg);
+    margin-left: 30px;
+}
+
+.loyalty__item {
+    margin-bottom: 16px;
+    padding-left: 23px;
+}

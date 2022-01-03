@@ -1,0 +1,13 @@
+.info {
+    background-color: $pink--pale;
+    min-height: 148px;
+}
+
+.info__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $dark-pink;
+    text-transform: uppercase;
+    padding: 60px 0;
+}

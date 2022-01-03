@@ -1,0 +1,29 @@
+.nav-sub-item__link-title {
+    display: block;
+    font-weight: 400;
+    line-height: 17px;
+    color: $dark-pink;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+
+.nav-sub-item__link {
+    display: block;
+    font-weight: 400;
+    color: $grey-nav;
+    margin: 0 0 11px 20px;
+    text-decoration: none;
+}
+
+.nav-sub-item__link-title:hover,
+.nav-sub-item__link:hover,
+.nav-sub-item__link-title:focus,
+.nav-sub-item__link:focus {
+    text-decoration: underline;
+}
+
+.nav-sub-item__link-title:active,
+.nav-sub-item__link:active {
+    color: $black;
+}
