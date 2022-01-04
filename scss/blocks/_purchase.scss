@@ -1,0 +1,89 @@
+.purchase {
+    width: 360px
+  }
+  
+  .purchase__form-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+  
+  .purchase__form-input {
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+  }
+  
+  .purchase__form-btn {
+    text-transform: uppercase;
+    margin-top: 24px;
+    padding: 10px 14px;
+    border: 1px solid $grey-form;
+    background: $white;
+  }
+  
+  .purchase__form-btn:hover,
+  .purchase__form-btn:focus {
+    border: 1px solid $pink-btn;
+    color: $white;
+    background: $pink-btn;
+    cursor: pointer;
+  }
+  
+  .purchase__total {
+    background-color: $purchase--bg;
+    margin-top: 60px;
+    padding: 40px 44px;
+  }
+  
+  .purchase__total-subtitle {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    margin-bottom: 12px;
+    text-align: end;
+  }
+  
+  .purchase__total-subsum {
+    margin-left: 10px;
+  }
+  
+  .purchase__total-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-bottom: 20px;
+    text-align: end;
+  }
+  
+  .purchase__total-sum {
+    margin-left: 10px;
+    font-weight: 700;
+    color: $dark-pink;
+  }
+  
+  .purchase__total-btn {
+    text-transform: uppercase;
+    margin-top: 17px;
+    border: 1px solid $grey-form;
+    background: $white;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .purchase__total-btn:hover,
+  .purchase__total-btn:focus {
+    border: 1px solid $pink-btn;
+    color: $white;
+    background: $pink-btn;
+    cursor: pointer;
+  }
