@@ -7,6 +7,7 @@
 
 .registration__form {
     max-width: 360px;
+    width: 50%;
 }
 
 .registration__form-title {
@@ -22,6 +23,12 @@
     margin-bottom: 20px;
     border: 1px solid $grey-form;
     padding: 0 0 0 15px;
+    box-sizing: border-box;
+}
+
+.registration__form-input:hover,
+.registration__form-input:focus {
+    box-shadow: 5px 5px $grey-form;
 }
 
 .registration__form-sex {
@@ -39,7 +46,7 @@
 
 .registration__btn {
     color: $white;
-    background-color: $dark-pink;
+    background-color: $grey-text;
     border: none;
     text-transform: uppercase;
     padding: 16px 29px;
@@ -49,4 +56,26 @@
 .registration__btn::after {
     content: url(../img/arrow.svg);
     margin-left: 20px;
+}
+
+.registration__btn:hover,
+.registration__btn:focus {
+    background-color: $dark-pink;
+}
+
+@media (max-width: 1024px) {
+    .registration {
+        padding: 64px 16px 96px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registration {
+        flex-direction: column;
+    }
+
+    .registration__form {
+        max-width: 100%;
+        width: 100%;
+    }
 }

@@ -1,24 +1,39 @@
 .item-descr__title {
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 29px;
-    text-transform: uppercase;
-    margin-bottom: 42px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.item-descr__point {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 6px;
+}
+
+.item-descr__point-value {
+  color: $dark-pink;
+}
+
+.item-descr__point-quantity {
+  margin-left: 24px;
+  width: 45px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .item-descr__title {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 26px;
+    width: 80%;
   }
-  
+
   .item-descr__point {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 26px;
-    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 4px;
   }
-  
-  .item-descr__point-value {
-    color: $dark-pink;
-  }
-  
-  .item-descr__point-quantity {
-    margin-left: 24px;
-    width: 45px;
-    text-align: center;
-  }
+}

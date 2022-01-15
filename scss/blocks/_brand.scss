@@ -1,14 +1,20 @@
 .brand {
     display: flex;
     margin: 0 0 63px;
+    background-color: $pink-bgc;
+}
+
+.brand__img {
+    background-color: transparent;
+    width: calc(48%);
+    height: auto;
 }
 
 .brand__title-wrp {
     flex-grow: 1;
-    background-color: $pink-bgc;
     display: flex;
     align-items: center;
-    padding: 0 0 0 92px;
+    padding: 0 0 0 5%;
 }
 
 .brand__title {
@@ -16,15 +22,8 @@
     font-weight: 900;
     line-height: 50px;
     text-transform: uppercase;
-}
-
-.brand__title::before {
-    height: 92px;
-    width: 12px;
-    background: $dark-pink;
-    content: '';
-    position: absolute;
-    margin-left: -26px;
+    border-left: 12px solid $dark-pink;
+    padding: 0 20px;
 }
 
 .brand__subtitle {
@@ -36,4 +35,19 @@
 
 .brand__subtitle-pink {
     color: $pink-color;
+}
+
+@media (max-width: 768px) {
+    .brand {
+        justify-content: center;
+        padding: 148px 0;
+    }
+
+    .brand__img {
+        display: none;
+    }
+
+    .brand__title-wrp {
+        justify-content: center;
+    }
 }

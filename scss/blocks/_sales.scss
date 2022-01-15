@@ -5,13 +5,14 @@
 }
 
 .sales__item {
-    width: 360px;
+    width: 32%;
     min-height: 260px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .sales__item-offer {
@@ -44,8 +45,24 @@
 
 .sales__item-accessories {
     background-image: url(../img/accesories.jpg);
-    background-repeat: no-repeat;
     width: 100%;
     min-height: 180px;
     margin: 30px 0 0;
+}
+
+@media (max-width: 768px) {
+    .sales__list {
+        flex-direction: column;
+    }
+
+    .sales__item {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+
+    .sales__item-accessories {
+        margin: 0 0 20px;
+        max-width: 360px;
+        align-self: center;
+    }
 }

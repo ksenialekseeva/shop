@@ -5,7 +5,7 @@
     flex-direction: column
 }
 
-.products__title { 
+.products__title {
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
@@ -27,13 +27,17 @@
 }
 
 .products__item {
-    width: 360px;
     background: $grey-bg;
-    margin-bottom: 30px;
+    max-width: calc(33% - 14px);
+    margin: 7px;
 }
 
 .products__item-wrp {
     position: relative;
+}
+
+.products__item-img {
+    width: 100%;
 }
 
 .products__item-overlay {
@@ -53,12 +57,12 @@
     position: absolute;
     width: 138px;
     height: 43px;
-    top: 50%;  
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
     padding: 0 0 0 30px
-  }
+}
 
 .products__item-btn::before {
     content: url(../img/basketmini.svg);
@@ -71,7 +75,7 @@
 .products__item:hover .products__item-btn {
     display: block;
     cursor: pointer;
- }
+}
 
 .products__item-name {
     font-weight: bold;
@@ -108,4 +112,22 @@
 .products__btn:focus {
     color: $white;
     background: $pink-btn;
+}
+
+@media (max-width: 1024px) {
+    .products {
+        margin-top: 64px;
+    }
+
+    .products__item {
+        max-width: calc(50% - 14px);
+        margin: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products__item {
+        max-width: 100%;
+        margin: 0 0 16px;
+    }
 }

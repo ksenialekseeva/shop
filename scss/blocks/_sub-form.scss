@@ -1,4 +1,4 @@
-.sub-form__title {  
+.sub-form__title {
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
@@ -7,7 +7,7 @@
     margin-bottom: 32px;
 }
 
-.sub-form__subtitle {  
+.sub-form__subtitle {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -17,6 +17,7 @@
 
 .sub-form__form {
     display: flex;
+    justify-content: center;
 }
 
 .sub-form__email {
@@ -37,4 +38,10 @@
     height: 50px;
     cursor: pointer;
     border-radius: 0 40px 40px 0;
+}
+
+@media (max-width: 350px) {
+    .sub-form__email {
+        width: 70%;
+    }
 }

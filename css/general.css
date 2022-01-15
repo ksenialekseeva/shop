@@ -2,11 +2,14 @@ body {
   font-family: 'Lato', sans-serif;
   font-style: normal;
   font-size: 14px;
-  line-height: 16px; }
+  line-height: 16px;
+}
 
 .container {
-  width: 1140px;
-  margin: 0 auto; }
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -17,7 +20,12 @@ body {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px; }
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
 
+hr {
+  width: 100%;
+}
 /*# sourceMappingURL=general.css.map */
