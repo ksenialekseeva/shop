@@ -28,4 +28,16 @@ body {
 hr {
   width: 100%;
 }
+
+@media (max-width: 1024px) {
+  .tablet-none {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-none {
+    display: none;
+  }
+}
 /*# sourceMappingURL=general.css.map */

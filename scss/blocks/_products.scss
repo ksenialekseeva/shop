@@ -61,19 +61,18 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
-    padding: 0 0 0 30px
 }
 
-.products__item-btn::before {
-    content: url(../img/basketmini.svg);
-    position: absolute;
-    left: 10px;
-    bottom: 5px;
+.products__item-icon {
+    fill: $white;
+    margin: 0 11px 0 0;
 }
 
 .products__item:hover .products__item-overlay,
 .products__item:hover .products__item-btn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
