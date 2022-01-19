@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 17px 0;
+    padding: 17px 30px 17px;
 }
 
 .header__logo-search-wrp {
@@ -68,4 +68,16 @@
     line-height: 17px;
     text-transform: uppercase;
     margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+    .header__nav {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .mobile-none {
+        display: none;
+    }
 }

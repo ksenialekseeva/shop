@@ -2,7 +2,8 @@
     font-size: 24px;
     font-weight: 300;
     line-height: 29px;
-    max-width: 650px;
+    width: calc(50% - 40px);
+    margin: 0 0 0 20px;
 }
 
 .loyalty__title {
@@ -22,4 +23,18 @@
 .loyalty__item {
     margin-bottom: 16px;
     padding-left: 23px;
+}
+
+@media (max-width: 768px) {
+    .loyalty {
+        font-size: 16px;
+        font-weight: 19px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loyalty {
+        width: 95%;
+        margin-top: 40px;
+    }
 }

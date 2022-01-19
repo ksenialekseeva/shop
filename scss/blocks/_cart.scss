@@ -1,6 +1,19 @@
 .cart {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 96px 0 114px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 96px 0 114px;
+}
+
+@media (max-width: 1140px) {
+  .cart {
+    padding: 60px 16px 114px;
+    flex-direction: column;
   }
+}
+
+@media (max-width: 768px) {
+  .cart {
+    padding: 40px 16px 100px;
+  }
+}

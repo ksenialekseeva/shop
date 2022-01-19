@@ -6,8 +6,9 @@ body {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
+    padding: 0 16px;
 }
 
 .visually-hidden {
@@ -21,4 +22,8 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+hr {
+    width: 100%;
 }
