@@ -1,0 +1,134 @@
+.article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__carousel {
+    background-color: $grey-bg;
+}
+
+.article__carousel-img {
+    margin: 0 auto 42px;
+}
+
+.article__desc {
+    border: 1px solid $grey-text;
+    padding: 64px 250px;
+    margin: -60px auto 0;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1140px;
+    z-index: 1;
+}
+
+.article__desc-subtitle {
+    color: $dark-pink;
+    text-transform: uppercase;
+    padding: 0 0 12px;
+}
+
+.article__desc-title {
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: $grey-desc;
+    margin: 12px 0;
+    text-align: center;
+}
+
+.article__desc-block {
+    display: block;
+    background-color: $dark-pink;
+    width: 63px;
+    height: 3px;
+    margin: 12px 0 0;
+    border: none;
+}
+
+.article__desc-text {
+    color: $grey-desc;
+    margin: 32px;
+    text-align: center;
+}
+
+.article__desc-price {
+    font-size: 24px;
+    line-height: 29px;
+    color: $dark-pink;
+    margin: 0 0 65px;
+}
+
+.article__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article__select {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin: 65px 0 0;
+}
+
+.article__select-var {
+    text-transform: uppercase;
+    border: none;
+    color: $grey-desc;
+    font-weight: 400;
+    text-align: center;
+}
+
+.article__desc-btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid $pink-btn;
+    padding: 10px 30px;
+    color: $pink-btn;
+    font-size: 16px;
+    background-color: transparent;
+    margin: 50px 0 0;
+}
+
+.article__desc-icon {
+    fill: $pink-btn;
+    margin: 0 20px 0 0;
+}
+
+.article__desc-btn:hover {
+    color: $white;
+    background-color: $pink-btn;
+    cursor: pointer;
+
+    .article__desc-icon {
+        fill: $white;
+    }
+}
+
+@media (max-width: 1024px) {
+    .article__desc {
+        padding: 64px 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .article__desc {
+        padding: 64px 24px;
+    }
+
+    .article__desc-price {
+        margin: 0 0 32px;
+    }
+
+    .article__select {
+        margin: 50px 0 0;
+        width: 250px;
+    }
+
+    .article__select-var {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}

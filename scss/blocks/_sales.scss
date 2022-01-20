@@ -5,14 +5,38 @@
 }
 
 .sales__item {
-    width: 32%;
-    min-height: 260px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: calc(33% - 15px);
+}
+
+.sales__item-link {
+    position: relative;
+    display: block;
+}
+
+.sales__item-img {
+    width: 100%;
+    filter: brightness(50%);
+    transition: all 0.3s linear;
+    background: rgba(33, 22, 22, 0.7);
+}
+
+.sales__item:hover,
+.sales__item:focus {
+    .sales__item-img {
+        filter: none;
+    }
+}
+
+.sales__item-long {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sales__item-desc {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
 }
 
 .sales__item-offer {
@@ -31,23 +55,12 @@
     text-transform: uppercase;
 }
 
-.sales__item-women {
-    background-image: url(../img/for_women.jpg);
-}
-
-.sales__item-men {
-    background-image: url(../img/for_men.jpg);
-}
-
-.sales__item-kids {
-    background-image: url(../img/for_kids.jpg);
-}
-
-.sales__item-accessories {
-    background-image: url(../img/accesories.jpg);
-    width: 100%;
-    min-height: 180px;
-    margin: 30px 0 0;
+@media (max-width: 1024px) {
+    .sales__item-long {
+        .sales__item-desc {
+            top: 30%;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -60,9 +73,14 @@
         width: 100%;
     }
 
-    .sales__item-accessories {
-        margin: 0 0 20px;
-        max-width: 360px;
-        align-self: center;
+    .sales__item-long {
+        min-height: 111px;
+        margin: 0;
+
+        .sales__item-img {
+            min-height: 111px;
+            object-fit: cover;
+        }
     }
+
 }
