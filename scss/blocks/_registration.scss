@@ -53,11 +53,13 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: all 0.3s linear;
 }
 
 .registration__btn-icon {
     fill: $dark-pink;
     margin: 0 0 0 20px;
+    transition: all 0.3s linear;
 }
 
 .registration__btn:hover,

@@ -9,6 +9,7 @@
 
 .article__carousel-img {
     margin: 0 auto 42px;
+    max-width: 100%;
 }
 
 .article__desc {
@@ -90,11 +91,13 @@
     font-size: 16px;
     background-color: transparent;
     margin: 50px 0 0;
+    transition: all 0.3s linear;
 }
 
 .article__desc-icon {
     fill: $pink-btn;
     margin: 0 20px 0 0;
+    transition: all 0.3s linear;
 }
 
 .article__desc-btn:hover {
@@ -109,6 +112,7 @@
 
 @media (max-width: 1024px) {
     .article__desc {
+        margin: 0 auto;
         padding: 64px 100px;
     }
 }

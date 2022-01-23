@@ -80,11 +80,15 @@ hr {
 .header__logopic {
   fill: #FFFFFF;
   cursor: pointer;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .header__logopic:hover,
 .header__logopic:focus {
   fill: #F09BA7;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .header__logopic:active {
@@ -450,6 +454,8 @@ hr {
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 18px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .products__btn:hover,
@@ -670,11 +676,15 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .registration__btn-icon {
   fill: #F16D7F;
   margin: 0 0 0 20px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .registration__btn:hover,
@@ -830,6 +840,8 @@ a:focus {
   width: 32px;
   height: 32px;
   background-color: #FFFFFF;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .footer__ref-link:hover,
@@ -1014,6 +1026,8 @@ a:focus {
   background: #FFFFFF;
   text-transform: uppercase;
   margin-top: 32px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .shopping__btn:hover,
@@ -1102,6 +1116,8 @@ a:focus {
   padding: 10px 14px;
   border: 1px solid #E1E1E1;
   background: #FFFFFF;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .purchase__form-btn:hover,
@@ -1172,6 +1188,8 @@ a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .purchase__total-btn:hover,
@@ -1273,6 +1291,7 @@ a:focus {
 
 .article__carousel-img {
   margin: 0 auto 42px;
+  max-width: 100%;
 }
 
 .article__desc {
@@ -1376,11 +1395,15 @@ a:focus {
   font-size: 16px;
   background-color: transparent;
   margin: 50px 0 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .article__desc-icon {
   fill: #F26376;
   margin: 0 20px 0 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .article__desc-btn:hover {
@@ -1395,6 +1418,7 @@ a:focus {
 
 @media (max-width: 1024px) {
   .article__desc {
+    margin: 0 auto;
     padding: 64px 100px;
   }
 }
