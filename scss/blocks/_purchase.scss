@@ -26,6 +26,7 @@
   padding: 10px 14px;
   border: 1px solid $grey-form;
   background: $white;
+  transition: all 0.3s linear;
 }
 
 .purchase__form-btn:hover,
@@ -83,6 +84,7 @@
   height: 50px;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s linear;
 }
 
 .purchase__total-btn:hover,

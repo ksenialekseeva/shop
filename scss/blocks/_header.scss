@@ -27,11 +27,13 @@
 .header__logopic {
     fill: $white;
     cursor: pointer;
+    transition: all 0.5s linear;
 }
 
 .header__logopic:hover,
 .header__logopic:focus {
     fill: $pink-color;
+    transform: scale(1.2);
 }
 
 .header__logopic:active {
