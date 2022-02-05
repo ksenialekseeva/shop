@@ -1439,4 +1439,116 @@ a:focus {
     line-height: 12px;
   }
 }
+
+.catalog {
+  padding: 50px 0 65px;
+}
+
+.catalog__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(33% - 14px);
+  margin: 0 7px 0;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+  padding: 13px 16px;
+}
+
+.catalog__filter-title {
+  text-transform: uppercase;
+  color: #F16D7F;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.catalog__filter-img {
+  fill: #F16D7F;
+  vertical-align: baseline;
+  margin: 0 11px;
+}
+
+.catalog__filter-subtitle {
+  text-transform: uppercase;
+  color: #F16D7F;
+  font-weight: 600;
+  border-left: 5px solid #F16D7F;
+  border-bottom: 1px solid #6F6E6E;
+  padding: 11px;
+  margin: 0 0 18px;
+}
+
+.catalog__filter-item {
+  margin: 0 18px 11px;
+}
+
+.catalog__filter-link {
+  color: #6F6E6E;
+  text-decoration: none;
+}
+
+.catalog__filter-link:hover,
+.catalog__filter-link:focus {
+  color: #F16D7F;
+  text-decoration: underline;
+}
+
+.catalog__select {
+  width: calc(33% - 14px);
+  margin: 0 7px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+  .catalog__filter {
+    width: calc(50% - 14px);
+  }
+  .catalog__select {
+    width: calc(50% - 14px);
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog__select {
+    width: calc(50% - 14px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog__filter {
+    width: 100%;
+  }
+  .catalog__select {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

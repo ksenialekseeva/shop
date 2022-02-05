@@ -1,0 +1,8 @@
+.catalog__filter {
+  max-width: calc(33% - 14px);
+  margin: 50px 7px 64px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(34, 60, 80, 0.2);
+  padding: 13px 16px;
+}
+/*# sourceMappingURL=catalog.css.map */
