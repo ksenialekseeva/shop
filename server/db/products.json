@@ -1,0 +1,86 @@
+[
+    {
+      "product_id": 1,
+      "product_img": 1,
+      "product_name": "MEN'S JACKET",
+      "product_desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "product_price": 100
+    },
+    {
+      "product_id": 2,
+      "product_img": 2,
+      "product_name": "WOMEN'S BLAZER",
+      "product_desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "product_price": 200
+    },
+    {
+      "product_id": 3,
+      "product_img": 3,
+      "product_name": "MEN'S HOODY",
+      "product_desc": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+      "product_price": 300
+    },
+    {
+      "product_id": 4,
+      "product_img": 4,
+      "product_name": "MEN'S T-SHIRT",
+      "product_desc": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
+      "product_price": 400
+    },
+    {
+      "product_id": 5,
+      "product_img": 5,
+      "product_name": "WOMEN'S BLAZER",
+      "product_desc": "Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.",
+      "product_price": 500
+    },
+    {
+      "product_id": 6,
+      "product_img": 6,
+      "product_name": "WOMEN'S SHIRT",
+      "product_desc": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.",
+      "product_price": 600
+    },
+    {
+      "product_id": 7,
+      "product_img": 7,
+      "product_name": "MEN'S JACKET",
+      "product_desc": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
+      "product_price": 700
+    },
+    {
+      "product_id": 8,
+      "product_img": 8,
+      "product_name": "MEN'S SWEATER",
+      "product_desc": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.",
+      "product_price": 800
+    },
+    {
+      "product_id": 9,
+      "product_img": 9,
+      "product_name": "MEN'S T-SHIRT",
+      "product_desc": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+      "product_price": 900
+    },
+    {
+      "product_id": 10,
+      "product_img": 10,
+      "product_name": "MEN'S SHIRT",
+      "product_desc": "In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.",
+      "product_price": 1000
+    },
+    {
+      "product_id": 11,
+      "product_img": 11,
+      "product_name": "MEN'S LEATHER JACKET",
+      "product_desc": "Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.",
+      "product_price": 1100
+    },
+    {
+      "product_id": 12,
+      "product_img": 12,
+      "product_name": "MEN'S SHIRT",
+      "product_desc": "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.",
+      "product_price": 1200
+    }
+]
