@@ -1,0 +1,88 @@
+"use strict";
+
+const products = [
+    new ProductsDTO(
+        0,
+        '0.jpg',
+        'Product 0',
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
+        10.10,
+    ),
+    new ProductsDTO(
+        1,
+        '1.jpg',
+        'Product 1',
+        'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.',
+        20.20,
+    ),
+    new ProductsDTO(
+        2,
+        '2.jpg',
+        'Product 2',
+        'Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.',
+        30.30,
+    ),
+    new ProductsDTO(
+        3,
+        '3.jpg',
+        'Product 3',
+        'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.',
+        40.40,
+    ),
+    new ProductsDTO(
+        4,
+        '4.jpg',
+        'Product 4',
+        'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.',
+        50.50,
+    ),
+    new ProductsDTO(
+        5,
+        '5.jpg',
+        'Product 5',
+        'Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.',
+        60.60,
+    ),
+    new ProductsDTO(
+        6,
+        '6.jpg',
+        'Product 6',
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.',
+        70.70,
+    ),
+    new ProductsDTO(
+        7,
+        '7.jpg',
+        'Product 7',
+        'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.',
+        80.80,
+    ),
+    new ProductsDTO(
+        8,
+        '8.jpg',
+        'Product 8',
+        'Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.',
+        90.90,
+    ),
+    new ProductsDTO(
+        9,
+        '9.jpg',
+        'Product 9',
+        'In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.',
+        100.00,
+    ),
+    new ProductsDTO(
+        10,
+        '10.jpg',
+        'Product 10',
+        'Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.',
+        110.10,
+    ),
+    new ProductsDTO(
+        11,
+        '11.jpg',
+        'Product 11',
+        'Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.',
+        120.20,
+    ),
+];
