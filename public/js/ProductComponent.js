@@ -1,7 +1,6 @@
 Vue.component('products', {
     data(){
         return {
-            catalogUrl: '/catalogData.json',
             filtered: [],
             products: [],
             imgCatalog: '/img/items/',

@@ -1,14 +1,17 @@
 Vue.component('cart', {
     data(){
       return {
-          cartUrl: '/getBasket.json',
           cartItems: [],
-          imgCart: 'https://placehold.it/200x150',
           showCart: false
       }
     },
     mounted(){
-        
+        this.$parent.getJson(`/api/cart`)
+            .then(data => {
+                for (let item of data.contents){
+                    this.$data.cartItems.push(item);
+                }
+            });
     },
     methods: {
         addProduct(item){
@@ -30,32 +33,28 @@ Vue.component('cart', {
                         }
                     })
             }
-
-            // this.$parent.getJson(`${API}/addToBasket.json`)
-            //     .then(data => {
-            //         if(data.result === 1){
-            //             let find = this.cartItems.find(el => el.id_product === item.id_product);
-            //             if(find){
-            //                 find.quantity++;
-            //             } else {
-            //                 const prod = Object.assign({quantity: 1}, item);
-            //                 this.cartItems.push(prod)
-            //             }
-            //         }
-            //     })
         },
+
         remove(item){
-            this.$parent.getJson(`${API}/addToBasket.json`)
+            if (item.quantity > 1) {
+                this.$parent.putJson(`/api/cart/${item.product_id}`, {quantity: -1})
                 .then(data => {
-                    if (data.result === 1) {
-                        if(item.quantity>1){
-                            item.quantity--;
-                        } else {
-                            this.cartItems.splice(this.cartItems.indexOf(item), 1);
-                        }
+                    if (data.result) {
+                        item.quantity--;
                     }
                 })
+            } else {
+                this.$parent.delJson(`/api/cart/${item.product_id}`)
+                .then(data => {
+                    if (data.result) {
+                        this.cartItems.splice(this.cartItems.indexOf(item), 1);
+                    } else {
+                        console.log('error');
+                    }
+                })
+            }
         },
+
         cartCount() {
              return this.cartItems.reduce((summ, item) => summ + item.quantity, 0);
            },
